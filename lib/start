@@ -1,0 +1,12 @@
+#!/bin/bash
+
+INPUT=/usr/src/code/input.txt
+CODE=/usr/src/code/main.py
+
+TIMESTAMP=$(date +%Y%m%d_%H%M%S)
+BACKUP="/usr/src/code/log_$TIMESTAMP.py"
+
+cp $CODE $BACKUP
+cp /dev/null $INPUT
+cp /dev/null $CODE
+echo "記述を開始できます"

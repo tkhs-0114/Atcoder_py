@@ -1,0 +1,7 @@
+services:
+  py:
+    build: .
+    volumes:
+      - ./Code:/usr/src/code
+    tty: true
+    init: true
